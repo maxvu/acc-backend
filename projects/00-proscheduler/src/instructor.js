@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = function Student ( school, id, name ) {
+module.exports = function Instructor ( school, id, name ) {
 
     this.getId = function () {
         return id;
