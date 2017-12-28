@@ -1,0 +1,17 @@
+<h1>{{user.name}}</h1>
+<table class="recent-threads">
+    <thead>
+        <tr>
+            <td>Thread</td>
+            <td>Posted</td>
+            <td>Message</td>
+        </tr>
+    </thead>
+    {{#messages}}
+        <tr>
+            <td><a href="/threads/{{threadSlug}}">{{threadTitle}}</a></td>
+            <td>{{created}}</td>
+            <td>{{{body}}}</td>
+        </tr>
+    {{/messages}}
+</table>

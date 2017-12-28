@@ -1,0 +1,19 @@
+<div class="prominent"><a href="/create-thread">Create new thread</a></div>
+<table class="recent-threads">
+    <thead>
+        <tr>
+            <td>Title</td>
+            <td>Author</td>
+            <td>Posted</td>
+            <td>Messages</td>
+        </tr>
+    </thead>
+    {{#threads}}
+        <tr>
+            <td><a href="/threads/{{slug}}">{{title}}</a></td>
+            <td><a href="/users/{{creatorName}}">{{creatorName}}</a></td>
+            <td>{{created}}</td>
+            <td>{{messageCount}}</td>
+        </tr>
+    {{/threads}}
+</table>

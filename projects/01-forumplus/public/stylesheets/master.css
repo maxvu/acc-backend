@@ -1,0 +1,78 @@
+body {
+    font-family: "Courier New", monospace;
+    background-color: #111;
+    color: #eee;
+    width: 700px;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: #cc3311;
+}
+
+a:hover {
+    color: #ee7755;
+}
+
+body > header a {
+    text-transform: uppercase;
+    color: #dbb323;
+}
+
+input, textarea {
+    color: inherit;
+    font-family: inherit;
+    background-color: inherit;
+    border: 1px dashed #eee;
+    padding: 5px;
+}
+
+form label {
+    display: block;
+    padding: 5px;
+}
+
+textarea {
+    width: 50%;
+    min-height: 200px;
+}
+
+table.recent-threads {
+    border-collapse: collapse;
+}
+
+table.recent-threads thead {
+    font-weight: bold;
+    margin: auto;
+}
+
+table.recent-threads td {
+    padding: 5px;
+}
+
+table.recent-threads tr:nth-child(2n), table.recent-threads thead {
+    background-color: #222;
+}
+
+.prominent {
+    padding: 10px 0;
+}
+
+.thread-message {
+    padding: 10px;
+}
+
+.thread-message:nth-child(2n) {
+    background-color: #222;
+}
+
+.thread-message .body {
+    margin-top: 10px;
+}
+
+.thread-message .body blockquote {
+    padding: 5px;
+    background-color: #333;
+    border-left: 4px solid #ccc;
+}

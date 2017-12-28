@@ -1,0 +1,22 @@
+<div class="thread-view">
+    <h1 class="title"><a href="/threads/{{thread.slug}}">{{thread.title}}</a></h1>
+    {{#messages}}
+        <div class="thread-message">
+            <a name="{{id}}"></a>
+            <div class="info">
+                <a href="/users/{{authorName}}">{{authorName}}</a>
+                Posted {{created}}
+            </div>
+            <div class="body">
+                {{{body}}}
+            </div>
+        </div>
+    {{/messages}}
+    <h2>Reply</h2>
+    <div class="reply">
+        <form method="POST" action="/threads/{{thread.slug}}">
+            <div><textarea name="body"></textarea></div>
+            <div><input type="submit" value="post"></div>
+        </form>
+    </div>
+</div>

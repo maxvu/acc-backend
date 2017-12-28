@@ -1,0 +1,10 @@
+{
+    "port" : 80,
+    "db" : {
+        "host"     : "my-db-host.net",
+        "port"     : 3306,
+        "user"     : "root",
+        "pass"     : "root",
+        "database" : "forumplus-myname"
+    }
+}
